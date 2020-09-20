@@ -16,3 +16,5 @@ wget https://raw.githubusercontent.com/RetroGamerCX/simple-macOS/master/simple%2
 to get the installation script.
 
 After that, just type 'sudo chmod +x 'simple macOS installer.sh'', then './simple macOS installer.sh' and that's it, the machine is almost installed. Now just install macOS
+
+IMPORTANT NOTE: I have not finished writing the script, there are still errors that I will correct later
