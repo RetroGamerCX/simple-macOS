@@ -3,7 +3,7 @@ First of all you need to know if your computer can handle this virtual machine. 
 
 At least 8GiB of RAM
 
-120 GB of free disk space
+300 GB of free disk space
 
 2-core or more processor
 
