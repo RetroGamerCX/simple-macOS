@@ -12,3 +12,5 @@ A Linux distro
 Then you need to run the command:
 
 wget https://raw.githubusercontent.com/RetroGamerCX/simple-macOS/master/simple%20macOS%20installer.sh
+
+to get the installation script
