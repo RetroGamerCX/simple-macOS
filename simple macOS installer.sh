@@ -9,7 +9,7 @@ sudo apt update
 sudo apt upgrade --yes
 sudo apt install qemu-kvm qemu-system-x86 qemu-img --yes
 mkdir ~/simple-macOS/firmware
-cd ~/simple-macOS/irmware
+cd ~/simple-macOS/firmware
 wget https://github.com/RetroGamerCX/simple-macOS/blob/master/snap/local/firmware/OVMF_CODE.fd?raw=true
 mv 'OVMF_CODE.fd?raw=true' 'OVMF_CODE.fd'
 wget https://github.com/RetroGamerCX/simple-macOS/blob/master/snap/local/firmware/OVMF_VARS-1024x768.fd?raw=true
