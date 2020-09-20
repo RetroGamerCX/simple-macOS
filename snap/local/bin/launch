@@ -15,7 +15,7 @@ OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
     -drive if=pflash,format=raw,readonly,file="$SNAP"/firmware/OVMF_CODE.fd \
     -drive if=pflash,format=raw,file="$SNAP_USER_COMMON"/firmware/OVMF_VARS-1024x768.fd \
     -device virtio-gpu,virgl=on \
-    -display sdl,gl=on \
+    -display gtk \
     -L "$SNAP"/usr/share/seabios/ \
     -L "$SNAP"/usr/lib/ipxe/qemu/ \
     -audiodev pa,id=pa,server="/run/user/$(id -u)/pulse/native" \
@@ -23,5 +23,5 @@ OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
     -usb -device usb-kbd -device usb-mouse \
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0 \
-    -drive id=ESP,if=virtio,format=qcow2,file=~/simple-macOS/ESP.qcow2 \
-    -drive id=SystemDisk,if=virtio,file=~/simple-macOS/macos.qcow2 \
+    -drive id=ESP,if=virtio,format=qcow2,file=/home/$USER/simple-macOS/ESP.qcow2 \
+    -drive id=SystemDisk,if=virtio,file=/home/$USER/simple-macOS/BaseSystem.img \
