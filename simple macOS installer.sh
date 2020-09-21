@@ -21,6 +21,6 @@ sudo apt install dmg2img --yes
 dmg2img -v -i BaseSystem.dmg BaseSystem.img
 wget https://raw.githubusercontent.com/RetroGamerCX/simple-macOS/master/snap/local/bin/launch
 sudo chmod +x launch
-qemu-img create -f raw ~/simple-macOS/macintosh-hd.img 256G
+qemu-img create -f raw ~/simple-macOS/macOS.img 256G
 clear
 echo Operation performed successfully. Go to the simple-macOS directory and type ./launch to start the virtual machine
