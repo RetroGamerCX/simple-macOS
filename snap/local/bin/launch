@@ -15,7 +15,7 @@ OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
     -drive if=pflash,format=raw,readonly,file="/home/$USER/simple-macOS/firmware/OVMF_CODE.fd \
     -drive if=pflash,format=raw,file=/home/$USER/simple-macOS/firmware/OVMF_VARS-1024x768.fd \
     -device virtio-vga,virgl=on \
-    -display sdl \
+    -display gtk \
     -L "$SNAP"/usr/share/seabios/ \
     -L "$SNAP"/usr/lib/ipxe/qemu/ \
     -audiodev pa,id=pa,server="/run/user/$(id -u)/pulse/native" \
@@ -24,4 +24,5 @@ OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0 \
     -drive id=ESP,if=virtio,format=qcow2,file=/home/$USER/simple-macOS/ESP.qcow2 \
-    -drive id=SystemDisk,if=virtio,file=/home/$USER/simple-macOS/BaseSystem.img \
+    -drive id=InstallerDisk,if=virtio,file=/home/$USER/simple-macOS/BaseSystem.img \
+    -drive id=SystemDisk,if=virtio,format=raw,file=/home/$USER/simple-macOS/macOS.img \
