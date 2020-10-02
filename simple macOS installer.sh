@@ -23,4 +23,4 @@ wget https://raw.githubusercontent.com/RetroGamerCX/simple-macOS/master/snap/loc
 sudo chmod +x launch
 qemu-img create -f raw ~/simple-macOS/macOS.img 256G
 clear
-echo Operation performed successfully. Go to the simple-macOS directory and type ./launch to start the virtual machine
+echo Operation performed successfully. Type ~/simple-macOS/launch to start the virtual machine
