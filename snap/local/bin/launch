@@ -4,7 +4,7 @@
     -enable-kvm \
     -m 4G \
     -machine q35,accel=kvm \
-    -smp 2,cores=2 \
+    -smp 2,cores=2,threads=1,sockets=1 \
     -cpu Penryn,vendor=GenuineIntel,kvm=on,+mmx,+sse,+sse2,+ssse3+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc \
     -device isa-applesmc,osk="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc" \
     -smbios type=2 \
