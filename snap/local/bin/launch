@@ -10,7 +10,7 @@
     -smbios type=2 \
     -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 \
     -serial mon:stdio \
-    -drive if=pflash,format=raw,readonly,file="/home/$USER/simple-macOS/firmware/OVMF_CODE.fd \
+    -drive if=pflash,format=raw,readonly,file=/home/$USER/simple-macOS/firmware/OVMF_CODE.fd \
     -drive if=pflash,format=raw,file=/home/$USER/simple-macOS/firmware/OVMF_VARS-1024x768.fd \
     -device virtio-vga,virgl=on \
     -display gtk \
