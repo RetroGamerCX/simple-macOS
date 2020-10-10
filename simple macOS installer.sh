@@ -7,7 +7,7 @@ sudo chmod +x fetch-macOS.py
 ./fetch-macOS.py
 sudo apt update
 sudo apt upgrade --yes
-sudo apt install qemu-kvm qemu-system-x86 qemu-img --yes
+sudo apt install qemu-kvm qemu-system-x86 qemu-utils --yes
 mkdir ~/simple-macOS/firmware
 cd ~/simple-macOS/firmware
 wget https://github.com/RetroGamerCX/simple-macOS/blob/master/snap/local/firmware/OVMF_CODE.fd?raw=true
