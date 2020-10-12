@@ -17,7 +17,7 @@
     -L /usr/share/seabios/ \
     -L /usr/lib/ipxe/qemu/ \
     -audiodev pa,id=pa,server="/run/user/$(id -u)/pulse/native" \
-    -device ich9-intel-hda -device hda-duplex \
+    -device ich9-intel-hda -device hda-duplex,audiodev=pa \
     -usb -device usb-kbd -device usb-mouse \
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0 \
